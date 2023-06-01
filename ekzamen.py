@@ -1,13 +1,10 @@
-#5
-
-a = input("введіть слово паліндром якщо хочете ")
-reverse = a[::-1]
-def palindrom(a):
-    while True:
-        if a[::1] == reverse:
-            print(a, "слово є паліндромом")
-            break
-        if  a != reverse:
-            print(a, "слово не є паліндромом")
-            continue
-print(palindrom(a))
+#6
+def get_even_numbers(input_list):
+    numbers = []
+    for num in input_list:
+        if num % 2 == 0:
+            numbers.append(num)
+    return numbers
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+numbers_list = get_even_numbers(input_list)
+print(numbers_list)
