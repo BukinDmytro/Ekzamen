@@ -1,11 +1,9 @@
-##2 2
-class BankAccount:
-    def __init__(self,account_number ,balance):
-        self.account_number = account_number
-        self.balance = balance
-    def deposit(self):
-        print(self.balance + 1000)
-    def withdraw(self):
-        print(self.balance - 500)
-babki = BankAccount("Andriy",10000)
-print(babki.deposit)
+##2 3
+class Book():
+    def __init__(self,title,author):
+        self.title = title
+        self.author = author
+    def get_info(self):
+        print(f"Назва: {self.title} , Автор: {self.author}")
+book = Book("2014" , "Джордж Белфорд")
+book.get_info()
