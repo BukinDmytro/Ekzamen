@@ -1,10 +1,8 @@
-#6
-def get_even_numbers(input_list):
-    numbers = []
-    for num in input_list:
-        if num % 2 == 0:
-            numbers.append(num)
-    return numbers
-input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-numbers_list = get_even_numbers(input_list)
-print(numbers_list)
+#7
+def get_top_student(grades_dict):
+    highest_grade = max(grades_dict.values())
+    top_student = [name for name, grade in grades_dict.items() if grade == highest_grade]
+    return top_student[0]
+grades = {'Іван': 78,'Марія': 85,'Петро': 27,'Костя': 89,'Андрій': 96}
+top_student_name = get_top_student(grades)
+print("Студент з найвищою оцінкою:", top_student_name)
