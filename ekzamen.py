@@ -1,10 +1,11 @@
-##10
-class Studen:
-    def __init__(self,name,age):
-        self.name = name
-        self.age = age
-    def get_info(self):
-        print(self.name, self.age)
-s=Studen("Andriy",16)
-s.get_info()
-
+##2 2
+class BankAccount:
+    def __init__(self,account_number ,balance):
+        self.account_number = account_number
+        self.balance = balance
+    def deposit(self):
+        print(self.balance + 1000)
+    def withdraw(self):
+        print(self.balance - 500)
+babki = BankAccount("Andriy",10000)
+print(babki.deposit)
